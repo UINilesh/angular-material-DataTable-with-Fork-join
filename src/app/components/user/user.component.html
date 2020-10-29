@@ -1,0 +1,18 @@
+<table width="100%">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Username</td>
+        <td>Email</td>
+         
+        
+    </tr>
+
+    <tr *ngFor="let getUser of userdatafetch;index i">
+        <td>{{i}} {{getUser.id }}</td>
+        <td>{{getUser.name | lowercase}}</td>
+        <td>{{getUser.username | uppercase}}</td>
+        <td>{{getUser.email | lowercase}}</td>
+         
+    </tr>
+    </table>
